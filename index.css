@@ -1,0 +1,21 @@
+body { background-color: #0a0a0a; color: #eee; font-family: sans-serif; margin: 0; text-align: center; }
+header { padding: 20px; background: #111; border-bottom: 2px solid #2ecc71; }
+h1 { color: #2ecc71; letter-spacing: 4px; margin: 0; }
+#online-counter { color: #2ecc71; font-size: 0.8rem; margin-bottom: 10px; }
+input { padding: 8px; background: #222; color: #fff; border: 1px solid #333; border-radius: 4px; }
+button { padding: 8px 15px; background: #2ecc71; border: none; font-weight: bold; cursor: pointer; border-radius: 4px; color: #000; }
+
+.main-container { max-width: 900px; margin: 20px auto; padding: 10px; }
+.player-box { position: relative; width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 8px; overflow: hidden; border: 1px solid #333; }
+#player { width: 100%; height: 100%; }
+
+#custom-outro { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); display: flex; align-items: center; justify-content: center; z-index: 99; }
+.hidden { display: none !important; }
+
+.list-container { margin-top: 20px; background: #151515; border-radius: 8px; padding: 10px; text-align: left; }
+ul { list-style: none; padding: 0; max-height: 400px; overflow-y: auto; }
+li { padding: 12px; border-bottom: 1px solid #222; cursor: pointer; }
+li:hover { background: #1a1a1a; }
+li.active { color: #2ecc71; background: #1a1a1a; border-left: 4px solid #2ecc71; }
+.locked { color: #555 !important; cursor: not-allowed; }
+.locked::after { content: " 🔒 Weed+"; color: #e74c3c; font-size: 0.7rem; float: right; }
